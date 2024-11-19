@@ -4,11 +4,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <head>
 </head>
-<body>
+<body onload="hidePreloader()">
 
         <!-- ========================= Body Section Started =============================== -->
     <!-- Load Header & Footer -->
-    <script src="template_autoload.js"></script>    
+    <script src="template_autoload.js"></script>
+
+      <!--- Preloader -->
+      <div id="preloader"> <img src="static/media/logo/tf_preloader.gif" alt="Loading..."> </div>
 
     <!-- Include Header -->
     <div id="header"></div>
@@ -706,6 +709,9 @@
     <div id="footer"></div>
 
 
+    
+    <!-- js to hide preloader loading is done -->
+    <script src="preloader.js"></script>
 
   <!-- Jquery js -->
   <script src="static/js/jquery-3.7.1.min.js"></script>
