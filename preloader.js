@@ -1,6 +1,3 @@
-function hidePreloader() {
-    const preloader = document.getElementById('preloader');
-    const content = document.getElementById('content');
-    preloader.style.display = 'none';
-    content.style.display = 'block';
-}
+window.addEventListener('load', function () {
+    document.querySelector('.pre-loader').className += ' hidden';
+});
