@@ -18,7 +18,7 @@ Our project is divided into three main groups:
 
 ## Live Demo
 
-Check out our live demo [here](https://nure-a1am.github.io).
+Check out our live demo [here](https://nure-a1am.github.io/Tutor-Finder/index.html).
 
 ## Team Members
 
