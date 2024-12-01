@@ -62,37 +62,6 @@
  </div> -->
  <!-- ==================== Scroll to Top End Here ==================== -->
 
- <!-- ==================== Mobile Menu Start Here ==================== -->
- <div class="mobile-menu scroll-sm d-lg-none d-block">
-     <button type="button" class="close-button"><i class="ph ph-x"></i> </button>
-     <div class="mobile-menu__inner">
-         <a href="index.html" class="mobile-menu__logo">
-             <img src="static/media/logo/logo.png" alt="Logo">
-         </a>
-         <div class="mobile-menu__menu">
-             <ul class="nav-menu flex-align nav-menu--mobile">
-                 <li class="nav-menu__item activePage"><a href="index.html" class="nav-menu__link">Home</a></li>
-                 <li class="nav-menu__item"><a href="about.html" class="nav-menu__link">About Us</a></li>
-                 <li class="nav-menu__item"><a href="blog.html" class="nav-menu__link">Blog</a></li>
-                 <li class="nav-menu__item"><a href="tuition-jobs.html" class="nav-menu__link">Tuition Jobs</a></li>
-                 <li class="nav-menu__item"><a href="contact.html" class="nav-menu__link">Contact</a></li>
-             </ul>
-             <ul class="nav-menu__item has-submenu">
-                <a href="javascript:void(0)" class="nav-menu__link">Login / Singup</a>
-                 <ul class="nav-submenu scroll-sm">
-                    <li class="nav-submenu__item">
-                        <a href="sign-in-tutor.html" class="nav-submenu__link hover-bg-neutral-30"> Tutor</a>
-                    </li>
-                    <li class="nav-submenu__item">
-                        <a href="sign-in-guardian.html" class="nav-submenu__link hover-bg-neutral-30"> Guardian / Student</a>
-                    </li>
-                </ul>
-            </ul>
-         </div>
-     </div>
- </div>
- <!-- ==================== Mobile Menu End Here ==================== -->
-
 
  <!-- =========================== Header Top Start ============================= -->
  <!-- <div class="header-top bg-main-25 border-bottom border-neutral-20">
@@ -243,7 +212,268 @@
          </nav>
      </div>
  </header>
- <!-- ============================ Header Two End ============================ -->
+  <!-- ============================ Header Two End ============================ -->
+  <!-- ==================== Mobile Menu Start Here ==================== -->
+  <div class="mobile-menu scroll-sm d-lg-none d-block">
+    <button type="button" class="close-button"><i class="ph ph-x"></i> </button>
+    <div class="mobile-menu__inner">
+        <a href="index.html" class="mobile-menu__logo">
+            <img src="static/media/logo/logo.png" alt="Logo">
+        </a>
+        <div class="mobile-menu__menu">
+            <ul class="nav-menu flex-align nav-menu--mobile">
+                <li class="nav-menu__item activePage"><a href="index.html" class="nav-menu__link">Home</a></li>
+                <li class="nav-menu__item"><a href="about.html" class="nav-menu__link">About Us</a></li>
+                <li class="nav-menu__item"><a href="blog.html" class="nav-menu__link">Blog</a></li>
+                <li class="nav-menu__item"><a href="tuition-jobs.html" class="nav-menu__link">Tuition Jobs</a></li>
+                <li class="nav-menu__item"><a href="contact.html" class="nav-menu__link">Contact</a></li>
+            </ul>
+            <ul class="nav-menu__item has-submenu">
+               <a href="javascript:void(0)" class="nav-menu__link">Login / Singup</a>
+                <ul class="nav-submenu scroll-sm">
+                   <li class="nav-submenu__item">
+                       <a href="sign-in-tutor.html" class="nav-submenu__link hover-bg-neutral-30"> Tutor</a>
+                   </li>
+                   <li class="nav-submenu__item">
+                       <a href="sign-in-guardian.html" class="nav-submenu__link hover-bg-neutral-30"> Guardian / Student</a>
+                   </li>
+               </ul>
+           </ul>
+        </div>
+    </div>
+</div>
+<!-- ==================== Mobile Menu End Here ==================== -->
+     <!-- Modal -->
+ <div class="modal fade" id="findTutor" tabindex="-1" aria-labelledby="findTutorLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <form action="#" class="modal-content p-24">
+                <div class="modal-header pt-0 pb-24 border-bottom border-dashed border-top-0 border-end-0 border-start-0">
+                    <h4 class="mb-0" id="findTutorLabel">Find Best Tutors</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+    
+                <div class="py-24">
+                    <div class="row gy-4">
+                        <div class="col-sm-12">
+                            <label class="text-neutral-700 text-lg fw-medium mb-12">Expected Tutor<span class="text-danger-600">*</span> </label>
+                            <div class="flex-align gap-24">
+                                <div class="form-check common-check common-radio mb-0">
+                                    <input class="form-check-input" type="radio" name="gender" id="Male">
+                                    <label class="form-check-label fw-normal flex-grow-1" for="Male">Male</label>
+                                </div>
+                                <div class="form-check common-check common-radio mb-0">
+                                    <input class="form-check-input" type="radio" name="gender" id="Female">
+                                    <label class="form-check-label fw-normal flex-grow-1" for="Female">Female</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <label class="text-neutral-700 text-lg fw-medium mb-12">Availability </label>
+                            <div class="flex-align gap-24">
+                                <div class="checkbox-group">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="daySat" value="saturday">
+                                    <label class="form-check-label" for="daySat">Sat</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="daySun" value="sunday">
+                                    <label class="form-check-label" for="daySun">Sun</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="dayMon" value="monday">
+                                    <label class="form-check-label" for="dayMon">Mon</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="dayTue" value="tuesday">
+                                    <label class="form-check-label" for="dayTue">Tue</label>
+                                  </div>
+                                  <br>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="dayWed" value="wednesday">
+                                    <label class="form-check-label" for="dayWed">Wed</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="dayThu" value="thursday">
+                                    <label class="form-check-label" for="dayThu">Thu</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="dayFri" value="friday">
+                                    <label class="form-check-label" for="dayFri">Fri</label>
+                                  </div>
+                                </div>
+                                  
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <label for="selectCountry" class="text-neutral-700 text-lg fw-medium mb-12">Tutor's University<span class="text-danger-600">*</span></label>
+                            <select class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600 form-select py-14" id="selectCountry">
+                                <option value="1">University of Dhaka</option>
+                                <option value="2">Bangladesh University of Engineering and Technology (BUET)</option>
+                                <option value="3">Jahangirnagar University</option>
+                                <option value="4">University of Chittagong</option>
+                                <option value="5">Rajshahi University</option>
+                                <option value="6">Khulna University</option>
+                                <option value="7">Dhaka University of Engineering and Technology (DUET)</option>
+                                <option value="8">Bangladesh Agricultural University (BAU)</option>
+                                <option value="9">Bangladesh University of Textiles (BUTEX)</option>
+                                <option value="10">Bangladesh Open University (BOU)</option>
+                                <option value="11">North South University</option>
+                                <option value="12">American International University-Bangladesh (AIUB)</option>
+                                <option value="13">Brac University</option>
+                                <option value="14">Independent University, Bangladesh (IUB)</option>
+                                <option value="15">University of Liberal Arts Bangladesh (ULAB)</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="location" class="text-neutral-700 text-lg fw-medium mb-12">Location </label>
+                            <input type="text" class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600" id="location" placeholder="Enter location...">
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="selectCountry" class="text-neutral-700 text-lg fw-medium mb-12">Select Class </label>
+                            <select class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600 form-select py-14" id="selectCountry">
+                                <option value="1">Pre-Nursery</option>
+                                <option value="2">Nursery</option>
+                                <option value="3">Kindergarten (KG)</option>
+                                <option value="4">Class 1</option>
+                                <option value="5">Class 2</option>
+                                <option value="6">Class 3</option>
+                                <option value="7">Class 4</option>
+                                <option value="8">Class 5</option>
+                                <option value="9">Class 6</option>
+                                <option value="10">Class 7</option>
+                                <option value="11">Class 8</option>
+                                <option value="12">Class 9</option>
+                                <option value="13">Class 10</option>
+                                <option value="14">HSC-1st year</option>
+                                <option value="15">HSC-2nd year</option>
+                                
+                            </select>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="selectLanguage" class="text-neutral-700 text-lg fw-medium mb-12">Select Medium</label>
+                            <select class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600 form-select py-14" id="selectLanguage">
+                                <option value="1">English Medium</option>
+                                <option value="1">Bangla Medium</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label for="selectDept" class="text-neutral-700 text-lg fw-medium mb-12">Select Department</label>
+                            <select class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600 form-select py-14" id="selectDept">
+                                <option value="1">Science</option>
+                                <option value="1">Commerce</option>
+                                <option value="1">Humanity</option>
+                                <option value="1">Islamic Studies</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="selectSub" class="text-neutral-700 text-lg fw-medium mb-12">Select Subject </label>
+                            
+                                <button class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600 form-select py-14" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Select Subjects</button>
+                                
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li>
+                                    <div class="common-input bg-main-25">
+                                      <input class="form-check-input" type="checkbox" 1  id="subjectPhysics" value="physics">
+                                      <label class="form-check-label" for="subjectPhysics">Physics</label>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="common-input bg-main-25">
+                                      <input class="form-check-input" type="checkbox" id="subjectBangla2" value="bangla2">
+                                      <label class="form-check-label" for="subjectBangla2">Bangla (2nd Paper)</label>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="common-input bg-main-25">
+                                      <input class="form-check-input" type="checkbox" id="subjectEnglish1" value="english1">
+                                      <label class="form-check-label" for="subjectEnglish1">English (1st Paper)</label>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="common-input bg-main-25">
+                                      <input class="form-check-input" type="checkbox" id="subjectEnglish2" value="english2">
+                                      <label class="form-check-label" for="subjectEnglish2">English (2nd Paper)</label>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="common-input bg-main-25">
+                                      <input class="form-check-input" type="checkbox" id="subjectIslam" value="islam">
+                                      <label class="form-check-label" for="subjectIslam">Islam & Moral Education</label>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="common-input bg-main-25">
+                                      <input class="form-check-input" type="checkbox" id="subjectICT" value="ict">
+                                      <label class="form-check-label" for="subjectICT">ICT</label>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="common-input bg-main-25">
+                                      <input class="form-check-input" type="checkbox" id="subjectChemistry" value="chemistry">
+                                      <label class="form-check-label" for="subjectChemistry">Chemistry</label>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="common-input bg-main-25">
+                                      <input class="form-check-input" type="checkbox" id="subjectBiology" value="biology">
+                                      <label class="form-check-label" for="subjectBiology">Biology</label>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="common-input bg-main-25">
+                                      <input class="form-check-input" type="checkbox" id="subjectHigherMath" value="higherMath">
+                                      <label class="form-check-label" for="subjectHigherMath">Higher Math</label>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="common-input bg-main-25">
+                                      <input class="form-check-input" type="checkbox" id="subjectGeneralScience" value="generalScience">
+                                      <label class="form-check-label" for="subjectGeneralScience">General Science</label>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="common-input bg-main-25">
+                                      <input class="form-check-input" type="checkbox" id="subjectAccounting" value="accounting">
+                                      <label class="form-check-label" for="subjectAccounting">Accounting</label>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="common-input bg-main-25">
+                                      <input class="form-check-input" type="checkbox" id="subjectFinance" value="finance">
+                                      <label class="form-check-label" for="subjectFinance">Finance</label>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="common-input bg-main-25">
+                                      <input class="form-check-input" type="checkbox" id="subjectEconomics" value="economics">
+                                      <label class="form-check-label" for="subjectEconomics">Economics</label>
+                                    </div>
+                                  </li>
+                                  <div class="common-input bg-main-25">
+                                    <input class="form-check-input" type="checkbox" id="subjectSocialScience" value="socialScience">
+                                    <label class="form-check-label" for="subjectSocialScience">Social Science</label>
+                                  </div>
+                                </li>
+                                </ul>
+                              </div>
+                        <div class="col-sm-6">
+                            <label for="location" class="text-neutral-700 text-lg fw-medium mb-12">Salary Range</label>
+                            <input type="text" class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600" id="location" placeholder="Min">
+                            <input type="text" class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600" id="location" placeholder="Max">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="pt-24 border-top border-dashed border-bottom-0 border-end-0 border-start-0">
+                    <button type="submit" class="btn btn-main rounded-pill flex-align gap-8" data-bs-toggle="modal" data-bs-target="#findTutor"> Find Now
+                        <i class="ph-bold ph-arrow-up-right d-flex text-lg"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+ </div>
+
 <body>
         <!-- ========================= Body Section Started =============================== -->
 
