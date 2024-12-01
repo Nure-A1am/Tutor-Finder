@@ -55,11 +55,11 @@
  <!--==================== Sidebar Overlay End ====================-->
 
  <!-- ==================== Scroll to Top End Here ==================== -->
- <div class="progress-wrap">
+ <!-- <div class="progress-wrap">
      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
      </svg>
- </div>
+ </div> -->
  <!-- ==================== Scroll to Top End Here ==================== -->
 
  <!-- ==================== Mobile Menu Start Here ==================== -->
@@ -74,21 +74,84 @@
                  <li class="nav-menu__item activePage"><a href="index.html" class="nav-menu__link">Home</a></li>
                  <li class="nav-menu__item"><a href="about.html" class="nav-menu__link">About Us</a></li>
                  <li class="nav-menu__item"><a href="blog.html" class="nav-menu__link">Blog</a></li>
-                 <li class="nav-menu__item"><a href="tuition-job.html" class="nav-menu__link">Tuition Jobs</a></li>
+                 <li class="nav-menu__item"><a href="tuition-jobs.html" class="nav-menu__link">Tuition Jobs</a></li>
                  <li class="nav-menu__item"><a href="contact.html" class="nav-menu__link">Contact</a></li>
              </ul>
-
-             <ul class="nav-menu flex-align nav-menu--mobile">
-                 
-                     <li class="nav-menu__item"><a href="tutor/login.html" class="nav-menu__link">Become a Tutor</a></li>
-                     <li class="nav-menu__item"><a href="guardian/login.html" class="nav-menu__link">Join as Guardian</a></li>
-                 
-             </ul>
+             <ul class="nav-menu__item has-submenu">
+                <a href="javascript:void(0)" class="nav-menu__link">Login / Singup</a>
+                 <ul class="nav-submenu scroll-sm">
+                    <li class="nav-submenu__item">
+                        <a href="sign-in-tutor.html" class="nav-submenu__link hover-bg-neutral-30"> Tutor</a>
+                    </li>
+                    <li class="nav-submenu__item">
+                        <a href="sign-in-guardian.html" class="nav-submenu__link hover-bg-neutral-30"> Guardian / Student</a>
+                    </li>
+                </ul>
+            </ul>
          </div>
      </div>
  </div>
  <!-- ==================== Mobile Menu End Here ==================== -->
 
+
+ <!-- =========================== Header Top Start ============================= -->
+ <!-- <div class="header-top bg-main-25 border-bottom border-neutral-20">
+     <div class="container">
+         <div class="flex-between gap-24">
+
+         </div>
+     </div>
+ </div> -->
+ <!-- =========================== Header Top End ============================= -->
+
+
+
+ <!-- ============================ Header Two Start ============================ -->
+</head>   
+<!-- Favicon -->
+<link rel="shortcut icon" href="static/media/logo/favicon.png">
+<!-- Bootstrap -->
+<link rel="stylesheet" href="static/css/bootstrap.min.css">
+<!-- select2 -->
+<link rel="stylesheet" href="static/css/select2.min.css">
+<!-- Slick -->
+<link rel="stylesheet" href="static/css/slick.css">
+<!-- Slick -->
+<link rel="stylesheet" href="static/css/magnific-popup.css">
+<!-- jquery-ui -->
+<link rel="stylesheet" href="static/css/jquery-ui.css">
+<!-- plyr Css -->
+<link rel="stylesheet" href="static/css/plyr.css">
+<!-- animate -->
+<link rel="stylesheet" href="static/css/animate.css">
+
+<link rel="stylesheet" href="static/css/aos.css">
+<!-- Main css -->
+<link rel="stylesheet" href="static/css/main.css">
+
+</head>
+
+
+  <!--==================== Preloader Start ====================-->
+  <div class="preloader">
+  <img src="static/media/logo/tf_preloader.gif" alt="">
+  </div>
+  <!--==================== Preloader End ====================-->
+ <!--==================== Overlay Start ====================-->
+ <div class="overlay"></div>
+ <!--==================== Overlay End ====================-->
+
+ <!--==================== Sidebar Overlay End ====================-->
+ <div class="side-overlay"></div>
+ <!--==================== Sidebar Overlay End ====================-->
+
+ <!-- ==================== Scroll to Top End Here ==================== -->
+ <div class="progress-wrap">
+     <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+     </svg>
+ </div>
+ <!-- ==================== Scroll to Top End Here ==================== -->
 
  <!-- =========================== Header Top Start ============================= -->
  <!-- <div class="header-top bg-main-25 border-bottom border-neutral-20">
@@ -121,39 +184,62 @@
                          <a href="index.html" class="nav-menu__link">Home</a>
                      </li>
                      <li class="nav-menu__item">
-                         <a href="#" class="nav-menu__link">About Us</a>
+                         <a href="about.html" class="nav-menu__link">About Us</a>
                      </li>
                      <li class="nav-menu__item">
-                         <a href="#" class="nav-menu__link">Blog</a>
+                         <a href="blog.html" class="nav-menu__link">Blog</a>
                      </li>
                      <li class="nav-menu__item">
-                         <a href="tuition-job.html" class="nav-menu__link">Tuition Jobs</a>
+                         <a href="tuition-jobs.html" class="nav-menu__link">Tuition Jobs</a>
                      </li>
                      <li class="nav-menu__item">
-                         <a href="#" class="nav-menu__link">Contact</a>
+                         <a href="contact.html" class="nav-menu__link">Contact</a>
+                     </li> 
+                        <!-- Buttons Start -->                        
+                 <div style="float:right" class="header-right flex-align">
+                     <li class="nav-menu__item">
+
+                         <li class="nav-menu__item has-submenu">
+                            <a href="javascript:void(0)" class="btn btn-main rounded-pill flex-align gap-8">Login / Signup <i class="ph-bold ph-arrow-up-right d-flex text-lg"></i></a>
+                             <ul class="nav-submenu scroll-sm">
+                                <li class="nav-submenu__item">
+                                    <a href="sign-in-tutor.html" class="nav-submenu__link hover-bg-neutral-30"> Tutor</a>
+                                </li>
+                                <li class="nav-submenu__item">
+                                    <a href="sign-in-guardian.html" class="nav-submenu__link hover-bg-neutral-30"> Guardian / Student</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
                      </li>
-
-            <!-- Header Right start -->
-            <div class="header-right flex-align">
-                <a href="#" class="info-action w-52 h-52 bg-main-25 hover-bg-main-600 border border-neutral-30 rounded-circle flex-center text-2xl text-neutral-500 hover-text-white hover-border-main-600" data-aos="fade-right" data-bs-toggle="modal" data-bs-target="#findTutor">
-                    <i class="ph-bold ph-magnifying-glass"></i>
-                </a>
-
-                <li class="nav-menu__item">
-                    <a href="#" class="btn btn-main rounded-pill flex-align gap-8" data-aos="fade-right" data-bs-toggle="modal" data-bs-target="#login_signup">Login / Signup
-                        <i class="ph-bold ph-arrow-up-right d-flex text-lg"></i>
-                    </a>
-                </li>
-
-                <button type="button" class="toggle-mobileMenu d-lg-none text-neutral-200 flex-center">
-                    <i class="ph ph-list"></i> 
-                </button>
-                
-            </div>
-            <!-- Header Right End  -->                 
+                 </div>    
+                       <!-- Buttons End -->
                  </ul>
              </div>
              <!-- Menu End  -->
+
+             <!-- Header Right start -->
+             <div class="header-right flex-align">
+                 <!-- <a href="javarscript:void(0)"
+                     class="info-action w-44 h-44 bg-main-25 hover-bg-main-600 rounded-circle flex-center text-xl text-neutral-500 hover-text-white position-relative me-6">
+                     <i class="ph-bold ph-heart"></i>
+                     <span
+                         class="w-22 h-22 flex-center rounded-circle bg-main-two-600 text-white text-xs position-absolute top-n6 end-n4">5</span>
+                 </a>
+                 <a href="javarscript:void(0)"
+                     class="info-action w-44 h-44 bg-main-25 hover-bg-main-600 rounded-circle flex-center text-xl text-neutral-500 hover-text-white position-relative me-6">
+                     <i class="ph-bold ph-shopping-cart-simple"></i>
+                     <span
+                         class="w-22 h-22 flex-center rounded-circle bg-main-two-600 text-white text-xs position-absolute top-n6 end-n4">3</span>
+                 </a> -->
+                 <a href="#" class="info-action w-52 h-52 bg-main-25 hover-bg-main-600 border border-neutral-30 rounded-circle flex-center text-2xl text-neutral-500 hover-text-white hover-border-main-600" data-aos="fade-right" data-bs-toggle="modal" data-bs-target="#findTutor">
+                    <i class="ph-bold ph-magnifying-glass"></i>
+                </a> 
+                 <button type="button" class="toggle-mobileMenu d-lg-none text-neutral-200 flex-center">
+                     <i class="ph ph-list"></i>
+                 </button>
+             </div>
+             <!-- Header Right End  -->
          </nav>
      </div>
  </header>
@@ -184,12 +270,12 @@
                         <h1 class="display4 fw-semibold mb-24 wow bounceInLeft">Best Tutoring Platform for <span class="text-main-two-600 wow bounceInRight" data-wow-duration="2s" data-wow-delay=".5s">Home</span> Tuitions</h1>
                         <p class="text-neutral-500 text-line-2 wow bounceInUp">Find the Perfect Tutor Near You: Enhance Learning with Expert Guidance and Personalized Support Today!</p>
                         <div class="buttons-wrapper flex-align flex-wrap gap-24 mt-40">
-                            <button type="button" class="btn btn-main rounded-pill flex-align gap-8" data-aos="fade-right" data-bs-toggle="modal" data-bs-target="#findTutor">
-                                Find Best Tutor
+                            <a href="sign-in-tutor.html" class="btn btn-main rounded-pill flex-align gap-8" data-aos="fade-right">
+                                Become a Tutor
                                 <i class="ph-bold ph-arrow-up-right d-flex text-lg"></i>
                             </button>
-                            <a href="apply-admission.html" class="btn btn-outline-main rounded-pill flex-align gap-8" data-aos="fade-left">
-                                Applying Tutor
+                            <a href="sign-up-guardian.html" class="btn btn-outline-main rounded-pill flex-align gap-8" data-aos="fade-left">
+                                Join as Guardian
                                 <i class="ph-bold ph-arrow-up-right d-flex text-lg"></i>
                             </a>
                         </div>
@@ -339,7 +425,7 @@
                             </div>
                         </div>
                         <div class="col-sm-12">
-                            <label class="text-neutral-700 text-lg fw-medium mb-12">Availability<span class="text-danger-600">*</span> </label>
+                            <label class="text-neutral-700 text-lg fw-medium mb-12">Availability </label>
                             <div class="flex-align gap-24">
                                 <div class="checkbox-group">
                                 <div class="form-check form-check-inline">
@@ -400,7 +486,7 @@
                             <input type="text" class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600" id="location" placeholder="Enter location...">
                         </div>
                         <div class="col-sm-6">
-                            <label for="selectCountry" class="text-neutral-700 text-lg fw-medium mb-12">Select Class <span class="text-danger-600">*</span></label>
+                            <label for="selectCountry" class="text-neutral-700 text-lg fw-medium mb-12">Select Class </label>
                             <select class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600 form-select py-14" id="selectCountry">
                                 <option value="1">Pre-Nursery</option>
                                 <option value="2">Nursery</option>
@@ -421,7 +507,7 @@
                             </select>
                         </div>
                         <div class="col-sm-6">
-                            <label for="selectLanguage" class="text-neutral-700 text-lg fw-medium mb-12">Select Medium<span class="text-danger-600">*</span></label>
+                            <label for="selectLanguage" class="text-neutral-700 text-lg fw-medium mb-12">Select Medium</label>
                             <select class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600 form-select py-14" id="selectLanguage">
                                 <option value="1">English Medium</option>
                                 <option value="1">Bangla Medium</option>
@@ -909,11 +995,11 @@
                                 <div
                                     class="rounded-12 p-32 text-center transition-2 item-hover bg-main-25 hover-bg-main-600">
                                     <span class="w-120 h-120 rounded-circle overflow-hidden d-inline-flex">
-                                        <img src="static/media/thumbs/testimonials-three-img3.png" alt=""
+                                        <img src="static/media/thumbs/testimonials-three-img4.png" alt=""
                                             class="cover-img">
                                     </span>
-                                    <h4 class="mt-24 mb-8 item-hover__text transition-2">Nora Fatehi</h4>
-                                    <span class="text-neutral-500 d-block item-hover__text transition-2">Engineer</span>
+                                    <h4 class="mt-24 mb-8 item-hover__text transition-2">Mrs. Moumita</h4>
+                                    <span class="text-neutral-500 d-block item-hover__text transition-2">Guardian</span>
                                     <ul class="flex-align d-inline-flex gap-8 my-24">
                                         <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
                                         <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
@@ -925,10 +1011,10 @@
                                 </div>
                                 <div class="rounded-12 p-32 text-center transition-2 item-hover bg-main-25 hover-bg-main-600">
                                     <span class="w-120 h-120 rounded-circle overflow-hidden d-inline-flex">
-                                        <img src="static/media/thumbs/testimonials-three-img1.png" alt="" class="cover-img">
+                                        <img src="static/media/thumbs/testimonials-three-img5.png" alt="" class="cover-img">
                                     </span>
-                                    <h4 class="mt-24 mb-8 item-hover__text transition-2">Robiul Hasan</h4>
-                                    <span class="text-neutral-500 d-block item-hover__text transition-2">Doctor</span>
+                                    <h4 class="mt-24 mb-8 item-hover__text transition-2">Md. Robiul Hasan</h4>
+                                    <span class="text-neutral-500 d-block item-hover__text transition-2">Guardian</span>
                                     <ul class="flex-align d-inline-flex gap-8 my-24">
                                         <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
                                         <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
@@ -940,10 +1026,10 @@
                                 </div>
                                 <div class="rounded-12 p-32 text-center transition-2 item-hover bg-main-two-25 hover-bg-main-two-600">
                                     <span class="w-120 h-120 rounded-circle overflow-hidden d-inline-flex">
-                                        <img src="static/media/thumbs/testimonials-three-img4.png" alt="" class="cover-img">
+                                        <img src="static/media/thumbs/testimonials-three-img6.png" alt="" class="cover-img">
                                     </span>
-                                    <h4 class="mt-24 mb-8 item-hover__text transition-2">Floyd Miles</h4>
-                                    <span class="text-neutral-500 d-block item-hover__text transition-2">Front End Developer</span>
+                                    <h4 class="mt-24 mb-8 item-hover__text transition-2">Dr. Tanuja Tanzin</h4>
+                                    <span class="text-neutral-500 d-block item-hover__text transition-2">Guardian</span>
                                     <ul class="flex-align d-inline-flex gap-8 my-24">
                                         <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
                                         <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
@@ -964,8 +1050,8 @@
                                     <span class="w-120 h-120 rounded-circle overflow-hidden d-inline-flex">
                                         <img src="static/media/thumbs/testimonials-three-img2.png" alt="" class="cover-img">
                                     </span>
-                                    <h4 class="mt-24 mb-8 item-hover__text transition-2">Kathryn Murphy</h4>
-                                    <span class="text-neutral-500 d-block item-hover__text transition-2">Graphic Designer</span>
+                                    <h4 class="mt-24 mb-8 item-hover__text transition-2">Md. Topu</h4>
+                                    <span class="text-neutral-500 d-block item-hover__text transition-2">Tutor</span>
                                     <ul class="flex-align d-inline-flex gap-8 my-24">
                                         <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
                                         <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
@@ -979,8 +1065,8 @@
                                     <span class="w-120 h-120 rounded-circle overflow-hidden d-inline-flex">
                                         <img src="static/media/thumbs/testimonials-three-img3.png" alt="" class="cover-img">
                                     </span>
-                                    <h4 class="mt-24 mb-8 item-hover__text transition-2">Sarah L.</h4>
-                                    <span class="text-neutral-500 d-block item-hover__text transition-2">WP Developer</span>
+                                    <h4 class="mt-24 mb-8 item-hover__text transition-2">Mst. Sarah</h4>
+                                    <span class="text-neutral-500 d-block item-hover__text transition-2">Tutoir</span>
                                     <ul class="flex-align d-inline-flex gap-8 my-24">
                                         <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
                                         <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
@@ -992,10 +1078,10 @@
                                 </div>
                                 <div class="rounded-12 p-32 text-center transition-2 item-hover bg-main-25 hover-bg-main-600">
                                     <span class="w-120 h-120 rounded-circle overflow-hidden d-inline-flex">
-                                        <img src="static/media/thumbs/testimonials-three-img3.png" alt="" class="cover-img">
+                                        <img src="static/media/thumbs/testimonials-three-img1.png" alt="" class="cover-img">
                                     </span>
-                                    <h4 class="mt-24 mb-8 item-hover__text transition-2">Nora Fatehi</h4>
-                                    <span class="text-neutral-500 d-block item-hover__text transition-2">Engineer</span>
+                                    <h4 class="mt-24 mb-8 item-hover__text transition-2">Md. Billal</h4>
+                                    <span class="text-neutral-500 d-block item-hover__text transition-2">Tutor</span>
                                     <ul class="flex-align d-inline-flex gap-8 my-24">
                                         <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
                                         <li class="text-warning-600 text-xl d-flex"><i class="ph-fill ph-star"></i></li>
@@ -1141,12 +1227,9 @@
                                 <ul class="footer-menu">
                                     <li class="mb-16">
                                         <a href="about.html" class="text-neutral-500 hover-text-main-600 hover-text-decoration-underline">About us</a>
-                                    </li>
+                                </li>  
                                     <li class="mb-16">
-                                        <a href="courses.html" class="text-neutral-500 hover-text-main-600 hover-text-decoration-underline">Courses</a>
-                                    </li>
-                                    <li class="mb-16">
-                                        <a href="instructor.html" class="text-neutral-500 hover-text-main-600 hover-text-decoration-underline">Instructor</a>
+                                        <a href="instructor.html" class="text-neutral-500 hover-text-main-600 hover-text-decoration-underline">Instructors</a>
                                     </li>
                                     <li class="mb-16">
                                         <a href="faq.html" class="text-neutral-500 hover-text-main-600 hover-text-decoration-underline">FAQs</a>
